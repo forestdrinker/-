@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  
+  --color-primary: #2563EB;
+  --color-secondary: #06B6D4;
+  --color-healing: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  
+  --color-text-main: #1E293B;
+  --color-text-sub: #64748B;
+  --color-line: #E5E7EB;
+  --color-bg: #F8FAFC;
+  --color-card: #FFFFFF;
+
+  --radius-xl: 16px;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text-main antialiased;
+  }
+}
+
+.card-minimal {
+  @apply bg-card rounded-xl border border-line;
+}
+
+.card-shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
